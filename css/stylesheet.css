@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    background: rgb(255 255 255 / 45%);
+    z-index: 1;
+}
+
+#bg-img {
+    overflow: hidden;
+    background-image: url("../image/bg-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+}
+
+.login-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75vw;
+
+}
+
+.first-card,
+.second-card {
+    border-radius: 10px;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.first-card img,
+.second-card img {
+    height: 100px;
+}
+
+.login-button {
+    padding: 4px 54px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 5px;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.login-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    padding: 6px;
+    background-color: #f5f5f5;
+}
+.report-banner{
+    margin-top: 2rem;
+}
